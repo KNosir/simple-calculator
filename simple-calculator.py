@@ -1,7 +1,8 @@
 while True:
     input_expression = input("Enter: ")
-    # if input_expression == '' or input_expression == 'result' or input_expression == "RESULT" or input_expression == 'Result':
-
+    if input_expression.isdigit() or input_expression.isinstance():
+        continue  
+    
     input_expression = list(input_expression)  
     #for cleaning backspaces 
     while " " in input_expression:
